@@ -1,0 +1,50 @@
+Pseudocode:-
+BEGIN
+DISPLAY current date and time
+COMPUTE getActualMinimum method of Calendar class for year
+DISPLAY minimum year
+COMPUTE getActualMinimum method of Calendar class for month
+DISPLAY minimum month
+COMPUTE getActualMinimum method of Calendar class for week
+DISPLAY minimum week
+COMPUTE getActualMinimum method of Calendar class for date
+DISPLAY minimum date
+END
+
+Program:-
+
+//create package
+package march24;
+//import Calendar class
+import java.util.Calendar;
+//create class
+public class Ex2
+{
+	//create main method
+	public static void main(String ...args)
+	{
+		//to read current date and time we usegetInstance() method
+		Calendar cal=Calendar.getInstance();
+		//prompt the user for print current date and time
+		System.out.println("current date and time is:"+cal.getTime());
+		//use getActualMinimum method of calendar class to print the year
+		int minyear=cal.getActualMinimum(Calendar.YEAR);
+		//print minimum year
+		System.out.println("minium year is:"+minyear);
+		//use getActualMinimum method of calender class to print month
+		int minmonth=cal.getActualMinimum(Calendar.MONTH);
+		//print minimum month
+		System.out.println("minium month is:"+minmonth);
+		//use getActualMinimum method of calender class to print year
+		int minweek=cal.getActualMinimum(Calendar.WEEK_OF_YEAR);
+		//print minimum week
+		System.out.println("minium week is:"+minweek);
+		//use getActualMinimum method of calender class to print date
+		int mindate=cal.getActualMinimum(Calendar.DATE);
+		//print minimum date
+		System.out.println("minium date is:"+mindate);
+		
+	}//end of main method
+
+}//end of class block
+
